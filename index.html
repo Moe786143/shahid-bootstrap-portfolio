@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
+    <meta name="description" content="Portfolio of Shahid Muhummad — Data & Reporting Analyst bridging business and technology." />
     <meta
       name="author"
       content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
@@ -14,7 +14,6 @@
       rel="canonical"
       href="https://getbootstrap.com/docs/5.3/examples/cover/"
     />
-    <script src="../assets/js/color-modes.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <meta name="theme-color" content="#712cf9" />
     <link
@@ -96,34 +95,51 @@
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
+      /* Skip link — keyboard/screen-reader users only, hidden visually otherwise */
+      .skip-link {
+        position: absolute;
+        left: -999px;
+        top: auto;
+        background: #712cf9;
+        color: #fff;
+        padding: .75rem 1.25rem;
+        z-index: 2000;
+        font-weight: 600;
+      }
+      .skip-link:focus {
+        left: 0;
+        top: 0;
+      }
     </style>
   </head>
   <body class="bg-dark">
-   
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <div class="">
-      
-      <div class="banner-wrap vh-100 vx-100 text-white">
+
+      <div class="banner-wrap vh-100 vx-100 text-white" id="home">
 
         <div class="overlay"></div>
 
         <header class="px-5 p-3 text-white fixed-top scrolling">
         <div>
           <h3 class="float-md-start mb-0">Portfolio</h3>
-           <nav class="nav nav-masthead justify-content-center float-md-end">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+           <nav class="nav nav-masthead justify-content-center float-md-end" aria-label="Primary">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
             <a class="nav-link" href="#about-us">About us</a>
             <a class="nav-link" href="#projects">Projects</a>
             <a class="nav-link" href="#contact">Contact</a>
           </nav>
-          
+
         </div>
       </header>
 
 
       <main class="d-flex flex-column align-items-center justify-content-center h-75 text-center">
         <h1 class="display-1">I am Shahid Muhummad</h1>
-        <span class="lead" id="typed"></span>
-        
+        <p class="lead">Data &amp; Reporting Analyst &middot; Web Developer &middot; Athlete</p>
+
         <p class="lead">
           <!-- <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white"
             >Learn more</a
@@ -131,7 +147,8 @@
         </p>
       </main>
       </div>
-      
+
+    <div id="main">
    <section id="about-us">
       <div class="container p-5">
         <div class="card">
@@ -140,13 +157,13 @@
                   <div class="col-md-6 col-sm-12">
                       <div class="row">
                           <div class="col-md-5">
-                              <img src="assets/banner.JPG" class="img-fluid" alt="...">
+                              <img src="assets/banner.JPG" class="img-fluid" alt="Profile photo of Shahid Muhummad">
                           </div>
                           <div class="col-md-7">
                               <p><strong>Name:</strong> Shahid Muhummad</p>
-                              <p><strong>Profile:</strong> </p>
-                              <p><strong>Email:</strong> </p>
-                              <p><strong>Phone:</strong> </p>
+                              <p><strong>Profile:</strong> Data &amp; Reporting Analyst Intern, Vodacom South Africa</p>
+                              <p><strong>Email:</strong> shahid@example.com</p>
+                              <p><strong>Phone:</strong> +27 00 000 0000</p>
                               <p><strong>Skills:</strong>
                               <span class="badge rounded-pill bg-dark">HTML</span>
                               <span class="badge rounded-pill bg-dark">CSS</span>
@@ -165,7 +182,7 @@
                   </div>
                   <div class="col-md-6">
                       <h1><mark>About me</mark></h1>
-                      <p class="lead"> Highly motivated Indiviual. Graduated two degrees in Business from Mancosa. Played football professionally for Wits University. Currently expanding my knowledge to become more skilled in the tech and finance fields. Aspiring Fintech Analyst or AI Engineer </p>
+                      <p class="lead"> I'm a Data &amp; Reporting Analyst Intern at Vodacom South Africa, working where business strategy meets technical execution. I hold a BBA Honours (Cum Laude) from Mancosa and I'm currently completing further qualifications in IT, AI Engineering, and Technology Management. I build full-stack web projects for practice and bring the same discipline to my work that I learned playing football for Wits University — show up prepared, track your numbers, and keep improving one rep at a time. </p>
                   </div>
               </div>
           </div>
@@ -183,13 +200,13 @@
               <img
                 src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/css_netflix.png"
                 class="card-img-top"
-                alt="..."
+                alt="Netflix landing page clone homepage"
               />
               <div class="card-body">
                 <h5 class="card-title">Netflix Landing Page</h5>
-                <p class="card-text">Built this with HTML & CSS</p>
+                <p class="card-text">Built with HTML &amp; CSS</p>
                 <a href="https://shahidmuhummad-net.netlify.app" target="_blank" class="btn btn-primary">View Website</a>
-                <a href="https://github.com/Moe786143/netflix-clone2.git" target="_blank" class="btn btn-primary">View Code</a>
+                <a href="https://github.com/Moe786143/netflix-clone2.git" target="_blank" class="btn btn-outline-dark" aria-label="View Netflix Landing Page source code"><i class="bi bi-code-slash"></i></a>
               </div>
             </div>
           </div>
@@ -197,15 +214,15 @@
           <div class="col-md-4 mt-3">
             <div class="card">
               <img
-                src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/css_netflix.png"
+                src="https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=600&h=360&fit=crop&q=80"
                 class="card-img-top"
-                alt="..."
+                alt="Social feed layout for the X (Twitter) clone"
               />
               <div class="card-body">
-                <h5 class="card-title">Netflix Landing Page</h5>
-                <p class="card-text">Built this with HTML & CSS</p>
-                <a href="https://shahidmuhummad-net.netlify.app" target="_blank" class="btn btn-primary">View Website</a>
-                <a href="https://github.com/Moe786143/netflix-clone2.git" target="_blank" class="btn btn-primary">View Code</a>
+                <h5 class="card-title">X (Twitter) Clone</h5>
+                <p class="card-text">Built with HTML, CSS &amp; JavaScript</p>
+                <a href="https://smxclonezaio.netlify.app" target="_blank" class="btn btn-primary">View Website</a>
+                <a href="https://github.com/Moe786143" target="_blank" class="btn btn-outline-dark" aria-label="View X Clone source code"><i class="bi bi-code-slash"></i></a>
               </div>
             </div>
           </div>
@@ -213,15 +230,63 @@
           <div class="col-md-4 mt-3">
             <div class="card">
               <img
-                src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/css_netflix.png"
+                src="https://images.unsplash.com/photo-1542626991-cbc4e32524cc?w=600&h=360&fit=crop&q=80"
                 class="card-img-top"
-                alt="..."
+                alt="Sticky-note grid layout for the Google Keep clone"
               />
               <div class="card-body">
-                <h5 class="card-title">Netflix Landing Page</h5>
-                <p class="card-text">Built this with HTML & CSS</p>
-                <a href="https://shahidmuhummad-net.netlify.app" target="_blank" class="btn btn-primary">View Website</a>
-                <a href="https://github.com/Moe786143/netflix-clone2.git" target="_blank" class="btn btn-primary">View Code</a>
+                <h5 class="card-title">Keep Clone</h5>
+                <p class="card-text">Built with HTML, CSS &amp; JavaScript</p>
+                <a href="https://smgkcclonezaio.netlify.app" target="_blank" class="btn btn-primary">View Website</a>
+                <a href="https://github.com/Moe786143" target="_blank" class="btn btn-outline-dark" aria-label="View Keep Clone source code"><i class="bi bi-code-slash"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1560169897-fc0cdbdfa4d5?w=600&h=360&fit=crop&q=80"
+                class="card-img-top"
+                alt="Video grid layout for the FakeTube video-sharing clone"
+              />
+              <div class="card-body">
+                <h5 class="card-title">FakeTube</h5>
+                <p class="card-text">Built with HTML &amp; CSS</p>
+                <a href="https://smytubeclonezaio.netlify.app" target="_blank" class="btn btn-primary">View Website</a>
+                <a href="https://github.com/Moe786143" target="_blank" class="btn btn-outline-dark" aria-label="View FakeTube source code"><i class="bi bi-code-slash"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1761682719767-36b43e4acd63?w=600&h=360&fit=crop&q=80"
+                class="card-img-top"
+                alt="Product grid layout for the Urban Threads e-commerce storefront"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Urban Threads</h5>
+                <p class="card-text">Built with JavaScript &amp; Firebase</p>
+                <a href="https://smurbanthreadszaio.netlify.app" target="_blank" class="btn btn-primary">View Website</a>
+                <a href="https://github.com/Moe786143" target="_blank" class="btn btn-outline-dark" aria-label="View Urban Threads source code"><i class="bi bi-code-slash"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1606814540563-5c02d62fd409?w=600&h=360&fit=crop&q=80"
+                class="card-img-top"
+                alt="Fibre optic network cables representing the FibrePulse diagnostics concept"
+              />
+              <div class="card-body">
+                <h5 class="card-title">FibrePulse</h5>
+                <p class="card-text">Built with HTML, CSS &amp; JS</p>
+                <a href="https://moe786143.github.io/fibrepulse-demo" target="_blank" class="btn btn-primary">View Website</a>
+                <a href="https://github.com/Moe786143" target="_blank" class="btn btn-outline-dark" aria-label="View FibrePulse source code"><i class="bi bi-code-slash"></i></a>
               </div>
             </div>
           </div>
@@ -241,99 +306,76 @@
               Would love to connect with fellow developers, employers looking
               for developers, or anyone looking to get web development done.
             </p>
-            <a
+            
               class="fs-2"
-              href="#"
+              href="https://github.com/Moe786143"
               target="_blank"
-              ><i class="bi bi-instagram m-2"></i
-            ></a>
-            <a
-              class="fs-2"
-              href="#"
-              target="_blank"
-              ><i class="bi bi-linkedin m-2"></i
-            ></a>
-            <a
-              class="fs-2"
-              href="#"
-              target="_blank"
+              aria-label="GitHub"
               ><i class="bi bi-github m-2"></i
             ></a>
 
-            <form>
+            <form action="#" method="post" class="text-start mt-3">
 
-              <div class="mb-3">              
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email Address</label>
                 <input
                   type="email"
                   class="form-control"
                   id="exampleInputEmail1"
+                  name="email"
                   aria-describedby="emailHelp"
                   placeholder="Enter Email Address"
-                />
-              </div>
-
-              <div class="mb-3">    
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Enter Name"
-                />
-              </div>
-
-              <div class="mb-3">    
-                <input
-                  type="text"
-                  class="form-control"
-                  id="subject"
-                  placeholder="Enter Subject"
+                  required
                 />
               </div>
 
               <div class="mb-3">
-                  <textarea class="form-control" aria-label="with textarea" placeholder="Enter Message"></textarea>
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Enter Name"
+                  required
+                />
               </div>
 
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="subject"
+                  name="subject"
+                  placeholder="Enter Subject"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" name="message" aria-label="with textarea" placeholder="Enter Message" required></textarea>
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
             </form>
 
           </div>
         </div>
       </div>
     </section>
+    </div>
 
 
 
         <footer class="bg-dark text-center text-white">
         <div class="container p-3">
-            <p>Developed by Shahid Muhummad using Bootstrap, for Zaio Bootstrap course</p>
+            <p>Developed by Shahid Muhummad using Bootstrap, for portfolio purposes</p>
         </div>
     </footer>
 
-
-
-<script>
-        
-        window.addEventListener("scroll", () => {
-          const header = document.querySelector("header")
-          header.classList.toggle("scrolling", window.scrollY > 0)
-        })
-
-    </script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-    <script>
-        var typed = new Typed('#typed', {
-        strings: ['Fullstack AI engineer', 'Business graduate', 'CGMA student', 'Atlethe'],
-        loop: true,
-        typeSpeed: 75,
-        shuffle: true
-        });
-    </script>
- 
-
-
-    
-  
   </body>
 </html>
